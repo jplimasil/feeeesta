@@ -60,7 +60,9 @@ body {
 
 .container,
 .about,
+.timer,
 .cards-container,
+.map,
 .footer {
   margin: auto;
 }
@@ -102,7 +104,7 @@ body {
   width: 80%;
   height: 90%;
   position: relative;
-  background-image: url(/assets/images/pentagram-bg-teste.webp);
+  background-image: url(/assets/images/pentagram-bg-teste.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 25px;
@@ -365,7 +367,7 @@ body {
 }
 /* Cards */
 .cards-container {
-  margin-top: 100px;
+  margin-top: 90px;
   width: 80%;
 }
 .cards {
@@ -406,15 +408,26 @@ body {
 }
 .card h1 {
   color: var(--text-color);
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 15px;
   font-family: var(--menu-font);
   text-shadow: var(--text-shadow);
 }
+
+.card .info-ticket {
+  color: var(--text-color);
+  font-size: 15px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-family: var(--menu-font);
+  text-shadow: var(--text-shadow);
+}
+
 .card .ticket-img {
   width: auto;
-  height: 300px;
+  height: 250px;
   margin: auto;
 }
 .card:nth-child(1) {
@@ -456,7 +469,7 @@ body {
 }
 .cards-container .cards .card:nth-child(1) .ticket-button {
   background-color: #354f83;
-  color: #ffffff;
+  color: #ffffff;rgb(0, 0, 0)
   text-shadow: var(--text-shadow);
 }
 .cards-container .cards .card:nth-child(2) .ticket-button {
@@ -509,14 +522,104 @@ body {
   left: 40px;
 }
 
+/* TIMER */
+
+.timer {
+  margin-top: 150px;
+  display: flex;
+  width: 70%;
+  height: 50%;
+  background-image: url(/assets/images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: var(--dark-box-shadow);
+  border-radius: 25px;
+  color: white;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+  text-align: center;      /* Garante que o texto fique alinhado ao centro */
+  font-size: 3vw;
+  font-family: var(--menu-font);
+  
+}
+/*.timer .img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.timer .img .ghost {
+  width: 600px;
+  height: auto;
+  position: absolute;
+  animation: 3s ease-in-out 0.33s infinite normal none running ghost;
+
+
+}
+
+/* Endereco */
+
+.endereco {
+  margin-top: 10px;
+  display: flex; /* Adiciona flexbox para a div pai */
+  justify-content: space-around; /* Espaço igual entre .rua e .contato */
+  align-items: center; /* Centraliza verticalmente */
+  background-color: #354f83;
+  width: 100%;
+  height: 30%;
+}
+
+.endereco .rua, .endereco .contato {
+  background-color: #f4850f;
+  display: flex;
+  flex-direction: column; /* Garante que o conteúdo fique em coluna */
+  width: 30%; /* Ajusta a largura */
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Adiciona espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+}
+
+
+/* MAP */
+
+.map{
+  color: white;
+  margin-top: 50px;
+  display: flex;
+  width: 80%;
+  height: 70%;
+  background-image: url(/assets/images/blood-hand-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: var(--dark-box-shadow);
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.map .map-content{
+  width: 100%;         /* Mapa ocupa toda a largura do contêiner */
+  height: 100%;       /* Altura do mapa */
+  border: 0;           /* Remove borda */
+}
+
+.map .map-content iframe{
+  width: 100%;         /* Mapa ocupa toda a largura do contêiner */
+  height: 100%;       /* Altura do mapa */
+  border: 0;           /* Remove borda */ 
+  border-radius: 10px;
+}
+
 /* footer  */
 
 .footer {
   position: relative;
   margin-top: 150px;
-  width: 80%;
-  height: 300px;
-  border-radius: 25px;
+  width: 100%;
+  height: 200px;
   box-shadow: var(--dark-box-shadow);
   background-image: url(/assets/images/font.webp);
   background-repeat: no-repeat;
@@ -525,10 +628,10 @@ body {
 
 .footer .book {
   position: absolute;
-  width: 220px;
+  width: 100px;
   height: auto;
   left: 390px;
-  top: 60px;
+  top: -00x;
   animation: book 4s ease-in-out infinite normal none running;
 }
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
+<script src="/assets/script.js"></script>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,7 +40,7 @@
           <ul>
             <li><a href="#header"> Halloween Party</a></li>
             <li><a href="#about">Sobre</a></li>
-            <li><a href="#buy-ticket">Ingresso</a></li>
+            <li><a href="#ticket">Ingresso</a></li>
             <li><a href="#contact">Contato</a></li>
           </ul>
           <!-- social -->
@@ -56,7 +56,9 @@
         <img class="witch" src="/assets/images/eyes-logo.avif" alt="">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aliquam sapiente ipsum molestias consectetur ab doloribus aperiam. Minus deleniti eveniet nesciunt alias eos reiciendis, quo magni odit aliquam? A, dolorum?.</p>
 
-        <button class="join">Comprar Ingresso</button>
+        <a href="#ticket">
+          <button class="join">Comprar Ingresso</button> 
+        </a>
 
       </div>
     </div>
@@ -77,21 +79,59 @@
 
   <!-- cards -->
   <h1 class="t-o-t" id="buy-ticket">TESTE</h1>
-  <div class="cards-container">
+  <div class="cards-container" id="ticket">
     <div class="cards">
       <div class="card">
-        <h1>Ingresso assombroso</h1>
-        <img class="ticket-img" src="/assets/images/luci-sigil-removebg-preview.png" alt="">
+        <h1>Ingresso</h1>
+        <img class="ticket-img" src="/assets/images/Andrealphus_seal.png" alt="">
         <div class="card-description">
           <ul>
             <li>Open Bar</li>
-            <li>X horas ate X horas</li>
+            <li>18:00H ate 02:00H</li>
           </ul>
         </div>
         <div class="line"></div>
-        <div class="card-price">20R$</div>
-        <button class="ticket-button">Buy Ticket</button>
+        <div class="card-price">R$20</div>
+        <button class="ticket-button">Comprar</button>
+        <p class="info-ticket">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime culpa fugiat voluptatibus quidem aspernatur eum voluptas consequuntur explicabo quo.</p>
       </div>
+    </div>
+  </div>
+
+  <h1 class="t-o-t" id="buy-ticket">Como chegar</h1>
+
+  <div class="endereco">
+    <div class="rua">
+      <h2>Endereço</h2>
+      <p>R. Fernandes Pereira, 9 - Kennedy, Nova Iguacu - RJ, 26020-260</p>
+    </div>
+    <div class="contato">
+      <h2>Contato</h2>
+      <p>21 964838308</p>
+    </div>
+
+  </div>
+
+  <div class="map">
+    <div class="map-content">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1094.0079123879264!2d-43.44952003773164!3d-22.736070522946527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967c97cebed7b%3A0x129a09e3683f833e!2sR.%20Fernandes%20Pereira%2C%209%20-%20Kennedy%2C%20Nova%20Igua%C3%A7u%20-%20RJ%2C%2026020-260!5e0!3m2!1spt-BR!2sbr!4v1727275044703!5m2!1spt-BR!2sbr" 
+      width="600" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    </div>
+  </div>
+  
+  <div id="timer" class="timer">
+    <div class="img">
+    </div>
+    <div class="timer-content">
+      <h1 id="time">00:00:00</h1>
+      <p>Contagem regressiva</p>
     </div>
   </div>
 
