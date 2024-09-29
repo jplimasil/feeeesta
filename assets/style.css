@@ -14,10 +14,10 @@
   --lilac-color: #000000;
   --red-color: #440101;
   --h1-color: #070a1a;
-  --hallow-color: #001302;
+  --hallow-color: #000000;
   --hallow-to-color: #700101;
   --menu-color: #0000003c;
-  --about-box-color: #130d27;
+  --about-box-color: #000000;
   --about-content-color: #703b2d;
 
   /* box shadow */
@@ -343,10 +343,10 @@ body {
 }
 /* Trick or Treat */
 .t-o-t {
-  font-size: 100px;
+  font-size: 90px;
   color: var(--hallow-color);
   text-align: center;
-  margin-top: 150px;
+  margin-top: 100px;
   font-family: var(--header-font);
   animation: tot 1.25s infinite;
   animation-timing-function: 10s;
@@ -367,7 +367,7 @@ body {
 }
 /* Cards */
 .cards-container {
-  margin-top: 90px;
+  margin-top: 20px;
   width: 80%;
 }
 .cards {
@@ -419,8 +419,7 @@ body {
   color: var(--text-color);
   font-size: 15px;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding: 15px;
   font-family: var(--menu-font);
   text-shadow: var(--text-shadow);
 }
@@ -429,6 +428,7 @@ body {
   width: auto;
   height: 250px;
   margin: auto;
+  padding: 10px;
 }
 .card:nth-child(1) {
   background: rgb(22, 20, 68);
