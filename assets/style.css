@@ -29,8 +29,8 @@
 
   /* fonts */
 
-  --menu-font: "Dancing Script", cursive;
   --header-font: "frankenweenieregular";
+  --menu-font: "Dancing Script", roboto;
 }
 /* fonts import*/
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
