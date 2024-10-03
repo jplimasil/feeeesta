@@ -29,8 +29,8 @@
 
   /* fonts */
 
-
   --header-font: "frankenweenieregular";
+  --menu-font: "Dancing Script", reboto;
 }
 /* fonts import*/
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
@@ -187,7 +187,7 @@ body {
 }
 /* content h1 */
 .container .content .hallow {
-  padding-top: 80px;
+  padding-top: 40px;
   width: 100%;
   max-width: 100%;
   font-family: "frankenweenieregular";
@@ -199,6 +199,13 @@ body {
   animation: hallow 3s infinite;
   animation-timing-function: 10s;
 }
+
+#alter{
+  font-size: 30px;
+  padding: 0px;
+  margin: -50px;
+}
+
 /* h1 animation */
 @keyframes hallow {
   0% {
@@ -240,12 +247,21 @@ body {
   width: 500px;
   max-width: 100%;
   color: var(--text-color);
-  font-size: 17px;
+  font-size: 30px; /* Tamanho de fonte para o primeiro parágrafo */
   text-align: center;
   font-style: italic;
-  font-family: Dancing Script, cursive;
+  font-family: var(--menu-font);
   text-shadow: var(--text-shadow);
+  margin: 0; /* Remove margens padrão entre parágrafos */
 }
+
+/* Estilizando o segundo parágrafo */
+.container .content p:nth-of-type(2n) {
+  font-size: 20px; /* Define um tamanho de fonte menor para todos os parágrafos pares */
+  margin: -70px;
+  padding-bottom: 50px;
+}
+
 .container .content .join {
   width: 150px;
   height: 50px;
@@ -663,7 +679,7 @@ body {
   width: 100%;
   height: 200px;
   box-shadow: var(--dark-box-shadow);
-  background-image: url(/assets/images/font.webp);
+  background-image: url(/assets/images/ouija-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
