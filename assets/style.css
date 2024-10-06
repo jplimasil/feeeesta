@@ -262,11 +262,13 @@ body {
 /* Estilizando o segundo parágrafo */
 .container .content p:nth-of-type(2n) {
   font-size: 15px; /* Define um tamanho de fonte menor para todos os parágrafos pares */
-  margin: -80px;
+  margin: -75px;
   padding-bottom: 50px;
   color: var(--text-color);
   font-family: var(--menu-font);
   font-family: cursive, system-ui;
+  font-style: oblique;
+  font-weight: bold;
 }
 
 .container .content .join {
