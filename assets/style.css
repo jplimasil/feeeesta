@@ -30,11 +30,13 @@
   /* fonts */
 
   --header-font: "frankenweenieregular";
-  --menu-font: "Dancing Script", reboto;
+  --menu-font: "Creepster", system-ui;
 }
 /* fonts import*/
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
 
 html {
   min-height: 100%;
@@ -247,19 +249,22 @@ body {
   width: 500px;
   max-width: 100%;
   color: var(--text-color);
-  font-size: 30px; /* Tamanho de fonte para o primeiro parágrafo */
+  font-size: 25px; /* Tamanho de fonte para o primeiro parágrafo */
   text-align: center;
   font-style: italic;
-  font-family: var(--menu-font);
+  font-family: cursive, system-ui;
   text-shadow: var(--text-shadow);
+  color: var(--text-color);
   margin: 0; /* Remove margens padrão entre parágrafos */
 }
 
 /* Estilizando o segundo parágrafo */
 .container .content p:nth-of-type(2n) {
-  font-size: 20px; /* Define um tamanho de fonte menor para todos os parágrafos pares */
+  font-size: 15px; /* Define um tamanho de fonte menor para todos os parágrafos pares */
   margin: -70px;
   padding-bottom: 50px;
+  color: var(--text-color);
+  font-family: var(--menu-font);
 }
 
 .container .content .join {
@@ -482,6 +487,10 @@ body {
   font-family: var(--menu-font);
   transition: 500ms all;
   margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: var(--text-shadow);
+  line-height: 2.4;
 }
 .cards-container .cards .card:nth-child(1) .ticket-button {
   background-color: #354f83;
