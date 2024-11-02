@@ -193,7 +193,7 @@ body {
   width: 100%;
   max-width: 100%;
   font-family: "frankenweenieregular";
-  font-size: 80px;
+  font-size: 100px;
   letter-spacing: 7px;
   text-align: center;
   color: var(--h1-color);
@@ -203,9 +203,9 @@ body {
 }
 
 #alter{
-  font-size: 30px;
+  font-size: 40px;
   padding: 0px;
-  margin: -50px;
+  margin: -40px;
 }
 
 /* h1 animation */
@@ -246,10 +246,10 @@ body {
   }
 }
 .container .content p {
-  width: 500px;
+  width: 100%;
   max-width: 100%;
   color: var(--text-color);
-  font-size: 30px; /* Tamanho de fonte para o primeiro parágrafo */
+  font-size: 28px; /* Tamanho de fonte para o primeiro parágrafo */
   text-align: center;
   font-style: italic;
   font-family: cursive, system-ui;
@@ -262,7 +262,7 @@ body {
 /* Estilizando o segundo parágrafo */
 .container .content p:nth-of-type(2n) {
   font-size: 15px; /* Define um tamanho de fonte menor para todos os parágrafos pares */
-  margin: -75px;
+  margin: -60px;
   padding-bottom: 50px;
   color: var(--text-color);
   font-family: var(--menu-font);
