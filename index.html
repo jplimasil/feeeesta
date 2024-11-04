@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <script src="/assets/script.js"></script>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +15,13 @@
   <!-- fonts -->
   <link rel="stylesheet" href="/assets/fonts/stylesheet.css">
 
+  <!-- Firebase App (base) -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+  <!-- Firebase Firestore (compatível) -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+
+  <script src="assets/list.js"></script>
+  <script src="assets/iconlist.js"></script>
 
 </head>
 
@@ -41,10 +49,8 @@
           </ul>
           <!-- social -->
           <div class="social">
-            <a href="#" target="_blank"><img src="/assets/images/icons/cauldron.png"
-                alt=""></a>
-            <a href="#" target="_blank"><img
-                src="/assets/images/icons/ghost.png" alt=""></a>
+            <a href="#" target="_blank"><img src="/assets/images/icons/cauldron.png" alt=""></a>
+            <a href="#" target="_blank"><img src="/assets/images/icons/ghost.png" alt=""></a>
           </div>
         </div>
         <!-- content -->
@@ -53,7 +59,7 @@
         <p>Estação Catarse</p>
         <p>Rock alternativo</p>
         <a href="#ticket">
-          <button class="join">Comprar Ingresso</button> 
+          <button class="join">Comprar Ingresso</button>
         </a>
 
       </div>
@@ -68,18 +74,22 @@
     <div class="about-content">
       <h1>About</h1>
       <p>
-        Prepare-se para uma noite de Halloween única, onde o mistério e um toque macabro se encontram. Com o tema "Blood", a festa vai transportar você para um ambiente enigmático e envolvente.<br><br>
+        Prepare-se para uma noite de Halloween única, onde o mistério e um toque macabro se encontram. Com o tema
+        "Blood", a festa vai transportar você para um ambiente enigmático e envolvente.<br><br>
 
         <strong>Atrações Musicais:</strong><br>
         A noite contará com uma atração especial que prometem intensificar o clima ritualístico:<br>
-        - <strong>Banda Estação Catarse</strong>:<br> Com seu rock alternativo envolvente, eles trarão um toque sombrio e profundo ao evento<br>
-        
+        - <strong>Banda Estação Catarse</strong>:<br> Com seu rock alternativo envolvente, eles trarão um toque sombrio
+        e profundo ao evento<br>
+
         <strong>Comidas e Bebidas:</strong>
         No local, haverá opções para todos os gostos:<br>
         - Bebidas: drinks, cerveja, refrigerantes e água estarão disponíveis para venda.<br>
-        - <strong>Open Bar de Vinho</strong>: Como cortesia, até as 20h30, haverá um open bar de vinho para aquecer a noite e brindar à ocasião.<br>
-        
-        <br><span class="premio">Premio para melhor fantaisa.</span><br> vista-se para impressionar e prepare-se para viver uma experiência que deixará marcas.
+        - <strong>Open Bar de Vinho</strong>: Como cortesia, até as 20h30, haverá um open bar de vinho para aquecer a
+        noite e brindar à ocasião.<br>
+
+        <br><span class="premio">Premio para melhor fantaisa.</span><br> vista-se para impressionar e prepare-se para
+        viver uma experiência que deixará marcas.
     </div>
   </div>
 
@@ -98,7 +108,8 @@
         </div>
         <div class="line"></div>
         <div class="card-price">R$20</div>
-        <a class="ticket-button" href="https://nubank.com.br/cobrar/74a2f/67266cb2-a880-4fdf-8e8f-b471d934dd0c" target="_blank">Comprar</a>
+        <a class="ticket-button" href="https://nubank.com.br/cobrar/74a2f/67266cb2-a880-4fdf-8e8f-b471d934dd0c"
+          target="_blank">Comprar</a>
         <p class="info-ticket">ATENÇÃO: Open Bar estará disponível somente até às 20h30!</p>
       </div>
     </div>
@@ -106,7 +117,7 @@
 
   <h1 class="t-o-t" id="buy-ticket">Como chegar</h1>
 
-  <div class="endereco"> 
+  <div class="endereco">
     <div class="rua">
       <img src="assets/images/map-mark-icon.png" alt="Ícone de Mapa" class="icon"> <!-- Ícone de mapa -->
       <div class="text-content">
@@ -114,33 +125,30 @@
         <p>R. Fernandes Pereira, 9 - Kennedy, Nova Iguaçu - RJ, 26020-260</p>
       </div>
     </div>
-    
+
     <div class="contato">
       <img src="/assets/images/contact-logo.png" alt="Ícone de Telefone" class="icon"> <!-- Ícone de telefone -->
       <div class="text-content">
         <h2>Contato</h2>
-        <a href="https://wa.me/5521997330122" target="_blank"> 
+        <a href="https://wa.me/5521997330122" target="_blank">
           <p>(21) 99733-0122</p>
         </a>
       </div>
     </div>
   </div>
-  
+
 
   <div class="map">
     <div class="map-content">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1094.0079123879264!2d-43.44952003773164!3d-22.736070522946527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967c97cebed7b%3A0x129a09e3683f833e!2sR.%20Fernandes%20Pereira%2C%209%20-%20Kennedy%2C%20Nova%20Igua%C3%A7u%20-%20RJ%2C%2026020-260!5e0!3m2!1spt-BR!2sbr!4v1727275044703!5m2!1spt-BR!2sbr" 
-      width="600" 
-      height="450" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1094.0079123879264!2d-43.44952003773164!3d-22.736070522946527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967c97cebed7b%3A0x129a09e3683f833e!2sR.%20Fernandes%20Pereira%2C%209%20-%20Kennedy%2C%20Nova%20Igua%C3%A7u%20-%20RJ%2C%2026020-260!5e0!3m2!1spt-BR!2sbr!4v1727275044703!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
 
     </div>
   </div>
-  
+
   <div id="timer" class="timer">
     <div class="img">
     </div>
@@ -149,6 +157,13 @@
       <p>Contagem regressiva</p>
     </div>
   </div>
+
+  <div class="confirmados">
+    <h2>Convidados Confirmados:</h2>
+    <div id="convidados-list" class="convidados-list"></div>
+  </div>
+  
+
 
   <!-- footer -->
   <footer class="footer" id="contact">
@@ -172,5 +187,6 @@
       })
   </script>
 </body>
+
 
 </html>

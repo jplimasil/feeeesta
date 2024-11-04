@@ -594,6 +594,75 @@ body {
 
 }
 
+/* confirmados */
+
+
+.confirmados {
+  background-color: #1c1c1c; /* Fundo escuro */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  max-height: 500px; /* Altura máxima fixa */
+  margin: 20px auto;
+  color: #fff;
+  text-align: center;
+  font-family: 'Creepster', sans-serif; /* Fonte temática */
+}
+
+.confirmados h2 {
+  font-size: 1.8em;
+  color: #ff4444; /* Cor do título */
+  text-shadow: 2px 2px #000;
+  margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+.guest-item {
+  background: rgba(255, 68, 68, 0.1);
+  padding: 10px;
+  border: 1px solid #ff4444;
+  border-radius: 4px;
+  margin: 5px 0;
+  font-size: 1.2em;
+  display: flex; /* Usamos flexbox para alinhar os itens */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.guest-item:hover {
+  transform: scale(1.05);
+}
+
+.pumpkin-emoji {
+  content: "\1F383 "; /* Código Unicode para a abóbora 🎃 */
+  font-size: 1.2em;
+  margin-right: 5px; /* Espaço entre a abóbora e o nome do convidado */
+}
+
+.guest-name {
+  font-size: 18px; /* Tamanho do texto do nome do convidado */
+  color: #ffffff; /* Cor do texto */
+  display: flex; /* Usado para alinhar o texto e o símbolo */
+  align-items: center; /* Alinha verticalmente o texto e o símbolo */
+}
+
+/* Estilo para o símbolo do pentagrama invertido */
+.guest-name::after {
+  content: " ⛧"; /* Código Unicode para o pentagrama invertido */
+  font-size: 18px; /* Tamanho do texto do símbolo */
+  color: #ff0000; /* Cor do símbolo */
+  margin-left: 10px; /* Adiciona um espaço à esquerda do símbolo */
+}
+
+.convidados-list {
+  max-height: 350px; /* Altura máxima para a lista de convidados */
+  overflow-y: auto; /* Permite rolagem apenas para a lista */
+}
+
+
+
+
+
 /* Endereco */
 
 .endereco {
