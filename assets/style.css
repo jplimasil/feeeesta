@@ -601,9 +601,10 @@ body {
   background-color: #1c1c1c; /* Fundo escuro */
   padding: 20px;
   border-radius: 8px;
-  max-width: 500px;
+  max-width: 400px;
   max-height: 500px; /* Altura máxima fixa */
   margin: 20px auto;
+  margin-top: 100px;
   color: #fff;
   text-align: center;
   font-family: 'Creepster', sans-serif; /* Fonte temática */
@@ -658,8 +659,6 @@ body {
   max-height: 350px; /* Altura máxima para a lista de convidados */
   overflow-y: auto; /* Permite rolagem apenas para a lista */
 }
-
-
 
 
 
@@ -763,7 +762,7 @@ body {
 
 .footer {
   position: relative;
-  margin-top: 150px;
+  margin-top: 90px;
   width: 100%;
   height: 200px;
   box-shadow: var(--dark-box-shadow);
