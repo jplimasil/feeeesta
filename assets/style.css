@@ -94,6 +94,37 @@ body {
   padding-bottom: 2px;
 }
 
+ #blood-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; /* Permite clicar através do contêiner */
+      overflow: hidden; /* Esconde gotas que saem do contêiner */
+    }
+
+    /* Estilo para as gotas de sangue */
+    .blood-drop {
+      position: absolute;
+      width: 10px; /* Largura da gota */
+      height: 13px; /* Altura da gota */
+      background-color: rgb(148, 0, 0); /* Cor da gota */
+      border-radius: 50px; /* Forma arredondada */
+      opacity: 0.8; /* Opacidade */
+      animation-name: fall; /* Nome da animação */
+      animation-timing-function: ease-in; /* Tipo de animação */
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(100vh); /* Move a gota até o fundo da tela */
+      }
+    }
+
 /* header container */
 .content-container {
   height: 100%;
