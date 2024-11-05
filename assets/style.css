@@ -94,36 +94,44 @@ body {
   padding-bottom: 2px;
 }
 
- #blood-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none; /* Permite clicar através do contêiner */
-      overflow: hidden; /* Esconde gotas que saem do contêiner */
-    }
+/* Contêiner para as gotas */
+#blood-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Permite clicar através do contêiner */
+  overflow: hidden; /* Esconde gotas que saem do contêiner */
+  z-index: 10;
+}
 
-    /* Estilo para as gotas de sangue */
-    .blood-drop {
-      position: absolute;
-      width: 10px; /* Largura da gota */
-      height: 13px; /* Altura da gota */
-      background-color: rgb(148, 0, 0); /* Cor da gota */
-      border-radius: 50px; /* Forma arredondada */
-      opacity: 0.8; /* Opacidade */
-      animation-name: fall; /* Nome da animação */
-      animation-timing-function: ease-in; /* Tipo de animação */
-    }
+/* Estilo para as gotas de sangue */
+.blood-drop {
+  position: absolute;
+  width: 8px; /* Largura da gota */
+  height: 12px; /* Altura da gota */
+  background-color: rgb(148, 0, 0); /* Cor da gota */
+  border-radius: 50%;
+  opacity: 0.8;
+  animation-name: fall;
+  animation-timing-function: ease-in;
+}
 
-    @keyframes fall {
-      0% {
-        transform: translateY(0);
-      }
-      100% {
-        transform: translateY(100vh); /* Move a gota até o fundo da tela */
-      }
-    }
+/* Animação de queda */
+@keyframes fall {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  80% {
+    transform: translateY(90vh) scale(1.1); /* Ajuste para simular peso */
+  }
+  100% {
+    transform: translateY(100vh) scale(1);
+    opacity: 0;
+  }
+}
+
 
 /* header container */
 .content-container {
