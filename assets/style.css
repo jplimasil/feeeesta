@@ -671,7 +671,7 @@ body {
 @keyframes heartbeat {
   0%, 20% {
     transform: scale(1);
-    color: #330000; /* Vermelho intenso */
+    color: #ffffff; /* Vermelho intenso */
     text-shadow: 0 0 10px #d10c0c, 0 0 20px #000000;
   }
   30% {
@@ -686,7 +686,7 @@ body {
   }
   70% {
     transform: scale(1.15);
-    color: #350000;
+    color: #ffffff;
     text-shadow: 0 0 15px #ffffff, 0 0 35px #020000;
   }
   100% {
