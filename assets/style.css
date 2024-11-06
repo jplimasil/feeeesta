@@ -704,6 +704,23 @@ body {
   font-weight: bolder;
 }
 
+#timer {
+  animation: breathing 4s ease-in-out infinite;
+}
+
+/* Animação de respiração */
+@keyframes breathing {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+  }
+}
+
+
 
 
 
