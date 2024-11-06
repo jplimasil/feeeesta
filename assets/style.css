@@ -676,12 +676,12 @@ body {
   }
   30% {
     transform: scale(1.2);
-    color: #ffffff;
+    color: #ff7878;
     text-shadow: 0 0 20px #8b0000, 0 0 40px #400000;
   }
   40% {
     transform: scale(1.05);
-    color: #ffa1a1;
+    color: #ffffff;
     text-shadow: 0 0 10px #d10c0c, 0 0 30px #6b0a0a;
   }
   70% {
