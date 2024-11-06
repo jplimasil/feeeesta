@@ -151,14 +151,17 @@ body {
   left: 0;
   width: 200%; /* Para se mover além das bordas */
   height: 200%;
+  transform: rotate(14deg); /* Leve rotação para disfarçar bordas */
   background: url('images/fog.webp') repeat;
   opacity: 0; /* Transparência da primeira camada */
-  animation: moveFog 60s linear infinite; /* Duração do movimento */
+  animation: moveFog 120s linear infinite; /* Duração do movimento */
+  filter: blur(8px); /* Ajuste o valor do blur para disfarçar bordas */
+}
 }
 
 #fog2 {
   opacity: 0; /* Transparência da segunda camada */
-  animation-duration: 90s; /* Velocidade diferente para profundidade */
+  animation-duration: 110s; /* Velocidade diferente para profundidade */
 }
 
 /* Animação para mover a neblina horizontalmente */
@@ -655,13 +658,6 @@ body {
   font-family: var(--menu-font);
   
 }
-/*.timer .img {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 .timer .img .ghost {
   width: 600px;
@@ -671,6 +667,43 @@ body {
 
 
 }
+
+@keyframes heartbeat {
+  0%, 20% {
+    transform: scale(1);
+    color: #330000; /* Vermelho intenso */
+    text-shadow: 0 0 10px #d10c0c, 0 0 20px #000000;
+  }
+  30% {
+    transform: scale(1.2);
+    color: #470000;
+    text-shadow: 0 0 20px #8b0000, 0 0 40px #400000;
+  }
+  40% {
+    transform: scale(1.05);
+    color: #970000;
+    text-shadow: 0 0 10px #d10c0c, 0 0 30px #6b0a0a;
+  }
+  70% {
+    transform: scale(1.15);
+    color: #4b0101;
+    text-shadow: 0 0 15px #a80000, 0 0 35px #020000;
+  }
+  100% {
+    transform: scale(1);
+    color: #6d0000;
+    text-shadow: 0 0 10px #d10c0c, 0 0 20px #6b0a0a;
+  }
+}
+
+#timer #time {
+  animation: heartbeat 1.5s infinite;
+  font-size: 5vw; /* Ajuste o tamanho para combinar com o efeito */
+  font-weight: bold;
+}
+
+
+
 
 /* confirmados */
 
