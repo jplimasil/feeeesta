@@ -681,13 +681,13 @@ body {
   }
   40% {
     transform: scale(1.05);
-    color: #970000;
+    color: #660000;
     text-shadow: 0 0 10px #d10c0c, 0 0 30px #6b0a0a;
   }
   70% {
     transform: scale(1.15);
-    color: #4b0101;
-    text-shadow: 0 0 15px #a80000, 0 0 35px #020000;
+    color: #350000;
+    text-shadow: 0 0 15px #ffffff, 0 0 35px #020000;
   }
   100% {
     transform: scale(1);
