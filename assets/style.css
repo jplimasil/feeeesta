@@ -338,6 +338,7 @@ body {
   color: var(--text-color);
   margin: 0; /* Remove margens padrão entre parágrafos */
   text-shadow: var(--text-shadow);
+  padding-bottom: 10px;
 }
 
 /* Estilizando o segundo parágrafo */
