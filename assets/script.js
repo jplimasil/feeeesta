@@ -61,3 +61,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Para parar a animação em algum ponto, você pode usar clearInterval(rainInterval);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const fogContainer = document.querySelector(".fog-container");
+
+  // Função para criar uma nova camada de neblina
+  function createFogLayer(opacity, duration) {
+    const fogLayer = document.createElement("div");
+    fogLayer.classList.add("fog-layer");
+    fogLayer.style.opacity = opacity;
+    fogLayer.style.animationDuration = duration;
+    fogContainer.appendChild(fogLayer);
+  }
+
+  // Criando duas camadas de neblina
+  createFogLayer(0.1, "60s");
+  createFogLayer(0.2, "90s");
+});

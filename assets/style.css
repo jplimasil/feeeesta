@@ -111,7 +111,7 @@ body {
   position: absolute;
   width: 8px; /* Largura da gota */
   height: 12px; /* Altura da gota */
-  background-color: rgb(148, 0, 0); /* Cor da gota */
+  background-color: rgba(148, 0, 0, 0.781); /* Cor da gota */
   border-radius: 50%;
   opacity: 0.8;
   animation-name: fall;
@@ -129,6 +129,45 @@ body {
   100% {
     transform: translateY(100vh) scale(1);
     opacity: 0;
+  }
+}
+
+/* Contêiner para neblina */
+.fog-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Estilos para cada camada de neblina */
+.fog-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%; /* Para se mover além das bordas */
+  height: 200%;
+  background: url('images/fog.webp') repeat;
+  opacity: 0; /* Transparência da primeira camada */
+  animation: moveFog 60s linear infinite; /* Duração do movimento */
+}
+
+#fog2 {
+  opacity: 0; /* Transparência da segunda camada */
+  animation-duration: 90s; /* Velocidade diferente para profundidade */
+}
+
+/* Animação para mover a neblina horizontalmente */
+@keyframes moveFog {
+  from {
+    transform: translateX(-50%) translateY(-50%);
+  }
+  to {
+    transform: translateX(50%) translateY(50%);
   }
 }
 
