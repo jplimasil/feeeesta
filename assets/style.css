@@ -698,8 +698,8 @@ body {
 
 #timer #time {
   animation: heartbeat 1.5s infinite;
-  font-size: 7vw; /* Ajuste o tamanho para combinar com o efeito */
-  font-weight: bold;
+  font-size: 9vw; /* Ajuste o tamanho para combinar com o efeito */
+  font-weight: bolder;
 }
 
 
