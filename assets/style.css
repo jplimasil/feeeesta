@@ -343,7 +343,7 @@ body {
 /* Estilizando o segundo parágrafo */
 .container .content p:nth-of-type(2n) {
   font-size: 15px; /* Define um tamanho de fonte menor para todos os parágrafos pares */
-  margin: -60px;
+  margin: -80px;
   padding-bottom: 50px;
   color: var(--text-color);
   font-family: var(--menu-font);
@@ -588,6 +588,7 @@ body {
   color: #ffffff;rgb(0, 0, 0)
   text-shadow: var(--text-shadow);
 }
+
 .cards-container .cards .card:nth-child(2) .ticket-button {
   background-color: #cb5a55;
   color: #ffffff;
