@@ -906,7 +906,7 @@ body {
   width: 100px;
   height: auto;
   left: 390px;
-  top: -00x;
+  top: 50%;
   animation: book 4s ease-in-out infinite normal none running;
 }
 
@@ -923,6 +923,101 @@ body {
     transform: translate(0px, 0px);
   }
 }
+
+.footer {
+  position: relative;
+  margin-top: 90px;
+  width: 100%;
+  height: 200px;
+  box-shadow: var(--dark-box-shadow);
+  background-image: url(/assets/images/ouija-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+}
+
+/* Ponteira do tabuleiro Ouija */
+/* Ponteira do tabuleiro Ouija */
+.ouija-pointer {
+  position: absolute;
+  bottom: 20%; /* Coloca a ponteira no meio verticalmente */
+  left: 50%;
+  width: 95px; /* Tamanho da ponteira */
+  height: 95px;
+  background-image: url(/assets/images/ouijapointer.png); /* Imagem da ponteira */
+  background-size: cover;
+  background-position: center;
+  transform: translate(-50%, -50%);
+  animation: infinityMove 5s infinite ease-in-out;
+}
+
+/* Animação do movimento em forma de infinito */
+@keyframes infinityMove {
+  0% {
+    transform: translate(-50%, -50%) translateX(40px) translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translate(-80%, -50%) translateX(0px) translateY(30px) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateX(-40px) translateY(0px) rotate(0deg);
+  }
+  75% {
+    transform: translate(-50%, -50%) translateX(0px) translateY(-30px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateX(40px) translateY(0px) rotate(0deg);
+  }
+}
+
+.footer .book {
+  position: absolute;
+  width: 120px; /* Ajustei a largura para ficar proporcional */
+  height: auto;
+  left: 50%;
+  top: 20px; /* Ajuste para centralizar a imagem */
+  transform: translateX(-50%);
+  animation: book 4s ease-in-out infinite normal none running;
+}
+
+@keyframes book {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+/* Estilização dos créditos */
+.credits {
+  font-size: 1.5rem;
+  color: #000000;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif; /* Fonte com estilo de Halloween */
+  font-weight: bolder;
+  margin-top: 150px;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #d10c0c;
+  animation: fadeInCredits 3s ease-in;
+}
+
+/* Animação de fade-in para os créditos */
+@keyframes fadeInCredits {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /* .footer .social-m {
 } */
 
